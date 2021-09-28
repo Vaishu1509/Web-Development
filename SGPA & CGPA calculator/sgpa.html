@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VP WebDevs|SGPA/CGPA CALCULATOR</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="opjavascript.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                <a class="navbar-brand" href="#">SGPA & CGPA CALCULATOR</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bar">
+                <ul class="nav navbar-nav">
+                    <li style="font-family: monospace; margin-left: 700px;"><a href="sgpa.html">SGPA CALCULATOR</a></li>
+                    <li style="font-family: monospace;"><a href="cgpa.html">CGPA CALCULATOR</a></li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    
+        <div class="container-fluid main" style="text-align:center;" >
+            <h1 class="sgpa-title" style="text-align:center;"><b><u>SGPA CALCULATOR</u></b></h1>
+            <p class="sgpa-title" style="text-align:center;"> This is a Webpage created for students to Calculate SGPA & CGPA.</p>
+            <div class="row" style="text-align:center;">
+                <div class="col-md-6" style="text-align:center;">
+                    <h2 class="sgpa">INSTRUCTIONS</h2>
+                    <p class="intro"> ->This SGPA calculator was built to help students calculate their SGPA.<br> ->To add subjects click the "add" button.<br> ->The credit break up is as follows:
+                        <ul class="intro" style="text-align:initial">
+                            <li>Main Subject - 4 credits</li>
+                            <li>Final Year Project - 5 credits</li>
+                            <li>Elective Subject - 3 credits</li>
+                            <li>Labs, Internship seminars, Technical seminars - 2 credits</li>
+                            <li>1 credit subjects</li>
+                        </ul>
+                    </p>
+                    <p class="intro">*|Using the above instructions, you can caluculate your Semester Grades|*</p>
+                </div>
+            </div>
+            <form class="form-horizontal">
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <legend>Enter your marks</legend>
+                    <div class="form-group" id="subject-field">
+                        <div class="input-group">
+                            <span class="input-group-addon">Subject 1</span>
+                            <input id="sub1" type="text" class="form-control" name="sub1" placeholder="0 - 100 marks" required>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="form-group" id="lab-fields">
+                        <div class="input-group">
+                            <span class="input-group-addon">Lab 1</span>
+                            <input id="lab1" type="text" class="form-control" name="sub1" placeholder="0 - 100 marks. Put 0 if not required" required>
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <span class="input-group-addon">Lab 2</span>
+                            <input id="lab2" type="text" class="form-control" name="sub1" placeholder="0 - 100 marks. Put 0 if not required" required>
+                    </div>
+                    <br>
+                    </div>
+                    <button class="btn btn-default addSubject" data-toggle="modal" data-target="#subModal"><i class="material-icons">add</i></button>
+                    <button type="button" class="btn btn-success sgpaCalculate" id="startSGPA">Calculate SGPA</button>
+                    <button type="reset" class="btn btn-danger">Reset</button>
+                    <br>
+                    <div class="col-md-7" style="margin-left : -120px;"></div>
+                    <div class="col-md-5" >
+                    <div class="well SGPAresult" style="text-align:center; margin-top: 10px;">Result will appear here</div>
+                </div>
+            </div>
+        </form>
+        <br>
+    </div>
+    <footer class="footer" style="font-size: x-large; text-align: right; margin-right: 50px;"> Developed by VP WebDevs </footer>
+<div id="subModal" class="modal fade" role="alertdialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Choose type of subject</h4>
+        </div>
+        <div class="modal-body">
+            <button class="btn btn-primary btn-block" id="addSubject" data-dismiss="modal">Main Subject - 4 credits</button>
+            <button class="btn btn-primary btn-block" id="addElective" data-dismiss="modal">Elective Subject - 3 credits</button>
+            <button class="btn btn-primary btn-block" id="addTwoCredit" data-dismiss="modal">2 Credits(Project phase 1, technical seminar, labs)</button>
+            <button class="btn btn-primary btn-block" id="addProjectTwo" data-dismiss="modal">Project phase 2</button>
+            <button class="btn btn-primary btn-block" id="addOneCredit" data-dismiss="modal">1 Credit</button>
+        </div>
+    </div>
+</div>
+    
+    </header>
+
+</body>
+
+</html>
