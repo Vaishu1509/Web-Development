@@ -1,0 +1,118 @@
+*
+
+{
+    margin : 0;
+    padding : 0;
+} 
+
+header{
+    background-image: linear-gradient(rgba(146, 129, 129, 0.5),rgba(54, 48, 48, 0.5)), url('corona.jpg');
+    height :  120vh;
+    background-size : cover;
+    background-position:center;
+}
+.top{
+    background-color: rgba(24, 16, 16, 0.6);
+    text-align: center;
+}
+.top ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+
+}
+.top ul li{
+    width: 180px;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.top ul li a{
+    text-decoration: none;
+    color:whitesmoke;
+    padding : 5px 20px;
+    font-family : Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}
+.container{
+    position : relative;
+    width: 1200px;
+    height: 400px;
+    margin : 70px auto;
+
+}
+.container .box1{
+    position : relative;
+    display: inline-flex;
+    width: calc(300px - 40px);
+    height: calc(200px - 40px);
+    margin: 15px;
+    background:orange;
+    float: center;
+}
+.container .box2{
+    position : relative;
+    display: inline-flex;
+    width: calc(300px - 40px);
+    height: calc(200px - 40px);
+    margin: 15px;
+    background: greenyellow;
+    float: center;
+}
+.container .box3{
+    position : relative;
+    display: inline-flex;
+    width: calc(300px - 40px);
+    height: calc(200px - 40px);
+    margin: 15px;
+    background: red;
+    float: center;
+}
+.container .box4{
+    position : relative;
+    display: inline-flex;
+    width: calc(300px - 40px);
+    height: calc(200px - 40px);
+    margin: 15px;
+    background: green;
+    float: center;
+}
+
+
+.image{
+    max-width: 500px;
+    max-height: 350px;
+    float: center;
+    margin-top: 100px;
+    margin-left : 300px;  
+}
+
+.container .box1 .one{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+.container .box2 .two{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+.container .box3 .three{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+.container .box4 .four{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    margin-top: 15px;
+    margin-left: 15px;
+
+}

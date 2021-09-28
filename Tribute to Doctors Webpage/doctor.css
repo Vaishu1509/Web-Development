@@ -1,0 +1,89 @@
+*
+
+{
+    margin : 0;
+    padding : 0;
+} 
+
+header{
+    background-color: rgb(148, 180, 187);
+    height :  320vh;
+    
+}
+.top{
+    background-color: rgba(24, 16, 16, 0.6);
+    text-align: center;
+}
+.top ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+
+}
+.top ul li{
+    width: 180px;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.top ul li a{
+    text-decoration: none;
+    color:whitesmoke;
+    padding : 5px 20px;
+    font-family : Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}
+.head{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+}
+.intro{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.description-container{
+    max-width : 800px;
+    margin : 50px auto 50px;
+}
+
+.description-container .img1{
+    max-width: 350px;
+    max-height: 700px;
+    float: right;
+    margin-left : 35px;  
+}
+
+.description-container .img2{
+    max-width: 700px;
+    max-height: 700px;
+    float: left; 
+    margin-right : 35px;   
+}
+.description-container .img3{
+    max-width: 400px;
+    max-height: 400px;
+    float: right;
+    margin-left : 35px; 
+}
+.description-container .img4{
+    max-width: 400px;
+    max-height: 400px;
+    float: left;
+    margin-right : 35px; 
+}
+.description-container .img5{
+    max-width: 400px;
+    max-height: 400px;
+    float: right;
+    margin-left : 35px; 
+}
+.para{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
